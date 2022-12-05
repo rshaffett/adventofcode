@@ -23,6 +23,8 @@ def readText(filename):
             continue
     print("The answer for the first part is: ", total)
     print("The answer for the second part is: ", total2)
+
+
 if len(sys.argv) == 2:
    lines = readText(sys.argv[1])
 else:
