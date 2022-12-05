@@ -5,7 +5,7 @@ def readText(filename):
     total = 0
     total2 = 0
     data = open(filename, 'r')
-    for line in data.readlines():
+    for line in data:
         if line[0] != '\n':
             pair1, pair2 = line.split(',')
             a, b = pair1.split('-')
@@ -22,9 +22,7 @@ def readText(filename):
         else:
             continue
     print("The answer for the first part is: ", total)
-    print("The answer for the second part is: ", total + total2)
-
-
+    print("The answer for the second part is: ", total2)
 if len(sys.argv) == 2:
    lines = readText(sys.argv[1])
 else:
