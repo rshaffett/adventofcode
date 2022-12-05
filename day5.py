@@ -2,15 +2,15 @@ import sys
 
 
 def readText(filename):
-    total = 0
-    total2 = 0
+
     data = open(filename, 'r')
     for line in data.readlines():
         if line[0] != '\n':
-                else:
+            print()
+        else:
             continue
-    print("The answer for the first part is: ", total)
-    print("The answer for the second part is: ", total + total2)
+    print("The answer for the first part is: ", )
+    print("The answer for the second part is: ", )
 
 
 if len(sys.argv) == 2:
